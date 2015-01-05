@@ -1,0 +1,316 @@
+/* reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+
+}
+
+
+body{
+  margin:0;
+  line-height: 1;
+  overflow-y: hidden;
+  font-size: 100%;
+  background-color: #394264;
+}
+#container {
+  width: 100%;
+  margin: auto !important;
+  display: block;
+  height: 100%;
+  position: absolute;
+  list-style-type: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.buddy {
+display: none;
+background: #fff;
+border-radius: 6px;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+color: #fff;
+width: 90%;
+position: absolute;
+cursor: hand;
+left: 5%;
+right: 5%;
+top: 50px;
+}
+
+
+
+.cover-image {
+height: 144px;
+width: 100%;
+background-image: url("http://lorempixel.com/360/144/");
+background-size: cover;
+border-radius: 6px 6px 0 0;
+}
+.plus{
+top: 100%;
+width: 100%;
+height: 100%;
+background-color: white;
+position: absolute;
+ -webkit-box-shadow: 0px -10px 28px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -10px 28px -9px rgba(0,0,0,0.75);
+box-shadow: 0px -10px 28px -9px rgba(0,0,0,0.75);
+  transition-duration:0.5s;
+  -webkit-transition-duration: 0.5s;
+z-index: 500;
+}
+
+
+
+.circleButton {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background-color: #DF3B57;
+display: block;
+float: right;
+margin-right: 10%;
+margin-top: -30px;
+border: 0;
+padding-left: 0px;
+z-index: 1000;
+  transition-duration:0.5s;
+  -webkit-transition-duration: 0.5s;
+-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.35);
+box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.35);
+position: fixed;
+right: 0;
+top: 195px;
+}
+
+button:focus {outline:0;}
+
+.open {
+transition-duration: 0.5s;
+-webkit-transition-duration: 0.5s;
+margin-top: 10px;
+width: 40px;
+height: 40px;
+top: 0;
+margin-right: 10px;
+}
+
+.close{
+  transition-duration:0.5s;
+  -webkit-transition-duration: 0.5s;
+  margin-top: -30px;
+  width: 60px;
+  height: 60px;
+}
+
+.display {
+  top: 0px;
+  transition-duration:.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+
+#logo{
+  margin-left: 10px;
+    transition-duration:.5s;
+}
+
+.open #logo{
+  margin-left: 10px;
+  transition-duration:.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.smallCircle {
+width: 9px;
+height: 9px;
+border-radius: 50%;
+background-color: white;
+display: block;
+float: left;
+margin: 2px;
+margin-top: 4px;
+  transition-duration:.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.open .smallCircle{
+  width: 5px;
+ height: 5px;
+ margin: 1px;
+   transition-duration:.5s;
+   -webkit-transition-duration: 0.5s;
+}
+
+.type {
+position: absolute;
+margin: 0;
+margin-left: 5px;
+margin-top: 5px;
+font-family: sans-serif;
+font-size: 15px;
+font-style: italic;
+}
+
+.venue {
+  color: white; 
+  bottom: 195px;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 130px;
+}
+
+.metrics {
+border-top: 1px solid lightgrey;
+background-color: white;
+height: 80px;
+width: 100%;
+border-radius: 0px 0px 6px 6px;
+}
+
+.metric {
+  border-right: 1px solid lightgrey;
+  float: left;
+  height: 100%;
+  width: 33%;
+}
+
+.metric:last-child {
+  border-right: 0px;
+}
+
+.recap {
+width: 100%;
+padding-top: 10px;
+background-color: white;
+}
+
+.recap h2{
+font-weight: 100;
+font-size: 1.1rem;
+color: black;
+text-transform: uppercase;
+padding-bottom: .7rem;
+letter-spacing: 1px;
+font-family: "latoregular"; 
+max-width: 65%;
+padding-left: 10px;
+}
+.recap p {
+color: lightgray;
+margin-top: 0;
+padding-bottom: .7rem;
+padding-left: 10px;
+font-family: 'latoitalic';
+}
+.metric h1 {
+color: #DF3B57;
+text-align: center;
+font-size: 1.4rem;
+vertical-align: baseline;
+line-height: 80px;
+}
+.metric h5{
+  color:  #DF3B57;
+  text-align: center;
+  margin-top: -25px;
+  font-size: 0.8rem;
+}
+
+.overlay.hidden {
+opacity: 0;
+pointer-events: none;
+-webkit-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+z-index: 100;
+-webkit-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+pointer-events: auto;
+margin-top: -4rem;
+padding-bottom: 4rem;
+}
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-reg-webfont.eot');
+    src: url('fonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-reg-webfont.woff') format('woff'),
+         url('fonts/lato-reg-webfont.ttf') format('truetype'),
+         url('fonts/lato-reg-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latoitalic';
+    src: url('fonts/lato-regita-webfont.eot');
+    src: url('fonts/lato-regita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-regita-webfont.woff') format('woff'),
+         url('fonts/lato-regita-webfont.ttf') format('truetype'),
+         url('fonts/lato-regita-webfont.svg#latoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

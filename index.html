@@ -1,0 +1,68 @@
+
+  <!DOCTYPE html>
+<html ng-app="ionicApp">
+  <head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8" />
+    <link href="ionic.css" rel="stylesheet">
+    <script src="ionic.bundle.js"></script>
+  </head>
+  <body lang="fr">
+    <div id="container"  ng-controller="MyCtrl">
+
+    <ion-content>
+      <ion-refresher on-refresh="doRefresh()"
+                     pulling-text="Pull to refresh..."
+                     refreshing-text="Refreshing!"
+                     refreshing-icon="ion-loading-c">
+                     
+      </ion-refresher>
+
+    
+      <div class="overlay hidden"></div>
+      <div class="buddy hidden scale" style="display: block;">         
+          <div class="cover-image"> </div>  
+
+          <div class="recap">
+            <h2> Dj Dux night & pop <br> champaign</h2>
+            <p class="style">House / Techno</p>
+          </div> 
+
+          <div class="metrics">
+            <div class="metric"><h1>2,7 km</h1></div>
+            <div class="metric"><h1>182</h1><h5>participants</h5></div>
+            <div class="metric"><h1>10€</h1></div>
+          </div>       
+ 
+      </div>
+
+</ion-content>
+    </div>  
+    <div class="plus">plus</div> 
+  </body>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
+  <script type="text/javascript">
+
+    angular.module('ionicApp', ['ionic'])
+
+    .controller('MyCtrl', function($scope, $timeout) {
+      $scope.doRefresh = function() {
+        
+        console.log('Refreshing!');
+        $timeout( function() {
+          //Stop the ion-refresher from spinning
+          $scope.$broadcast('scroll.refreshComplete');
+        
+        }, 1000);
+          
+      };
+      
+    });
+  </script>
+</html>
+
